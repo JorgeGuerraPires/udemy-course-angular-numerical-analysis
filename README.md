@@ -10,4 +10,5 @@ For running locally:
 `npm install`
 `npm start`
 
-Check out my Udemy profile! `https://www.udemy.com/user/jorge-guerra-pires/`
+
+[Check out my Udemy profile! ⚡️](https://www.udemy.com/user/jorge-guerra-pires/) 🚀🚀
