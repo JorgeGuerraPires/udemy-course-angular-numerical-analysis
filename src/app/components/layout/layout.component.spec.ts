@@ -34,12 +34,12 @@ describe('LayoutComponent', () => {
     it('should make sure router-outlet is present', () => {
 
       //Arrage
-      const emailInput = fixture.nativeElement.querySelector("router-outlet");
+      const outlet = fixture.nativeElement.querySelector("router-outlet");
 
       //act
 
       //assert
-      expect(emailInput).toBeTruthy();
+      expect(outlet).toBeTruthy();
     });
 
   })
