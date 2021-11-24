@@ -1,6 +1,43 @@
 <p>
     <mat-toolbar color="primary" class="toolbar">
+
         <span>Miyagi-Do lab</span>
-        <span class="welcome">Welcome</span>
+        <span class="welcome">Welcome </span>
+
+
+
+        <!-- the menu that appears is here, it is just a button! -->
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu"
+            class="mat-menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+
+
+
+
+        <!-- the menu options is here! -->
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="dev">
+                <span>
+                    <mat-icon>code</mat-icon> dev area
+                </span>
+            </button>
+
+            <mat-divider></mat-divider>
+            <button mat-menu-item *ngIf="user">
+                <span>
+                    <mat-icon>lock</mat-icon> Log out
+                </span>
+            </button>
+            <button mat-menu-item routerLink="login" *ngIf="!user">
+                <span>
+                    <mat-icon>lock_open</mat-icon> Log in
+                </span>
+            </button>
+
+
+        </mat-menu>
+
+
     </mat-toolbar>
 </p>
